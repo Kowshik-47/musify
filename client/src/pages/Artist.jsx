@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import SongCard from '../components/music/SongCard';
 import AlbumCard from '../components/music/AlbumCard';
 import { BsPlayFill } from 'react-icons/bs';
 import Loader from '../components/common/Loader';
@@ -141,5 +140,6 @@ const Artist = () => {
     </div>
   );
 };
+
 
 export default Artist;

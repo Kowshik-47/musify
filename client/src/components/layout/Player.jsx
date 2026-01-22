@@ -1,20 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
-  setIsPlaying,
   setCurrentTime,
   setDuration,
   nextSong,
-  previousSong,
 } from '../../redux/slices/playerSlice';
 import PlayerControls from '../player/PlayerControls';
 import VolumeControl from '../player/VolumeControl';
 import ProgressBar from '../player/ProgressBar';
-import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
+import { AiOutlineHeart } from 'react-icons/ai';
 
 const Player = () => {
   const dispatch = useDispatch();
-  const { currentSong, isPlaying, volume, currentTime } = useSelector(
+  const { currentSong, isPlaying, volume } = useSelector(
     (state) => state.player
   );
   const audioRef = useRef(null);
@@ -106,5 +104,6 @@ const Player = () => {
     </div>
   );
 };
+
 
 export default Player;

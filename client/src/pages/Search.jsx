@@ -4,7 +4,6 @@ import SongCard from '../components/music/SongCard';
 
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -41,5 +40,6 @@ const Search = () => {
     </div>
   );
 };
+
 
 export default Search;

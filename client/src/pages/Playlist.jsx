@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setQueue, setCurrentSong, setIsPlaying } from '../redux/slices/playerSlice';
 import { BsPlayFill, BsClock, BsThreeDots } from 'react-icons/bs';
-import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
+import { AiOutlineHeart } from 'react-icons/ai';
 import Loader from '../components/common/Loader';
 
 const Playlist = () => {
@@ -177,5 +177,6 @@ const Playlist = () => {
     </div>
   );
 };
+
 
 export default Playlist;

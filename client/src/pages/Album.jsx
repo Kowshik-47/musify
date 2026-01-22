@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setQueue, setCurrentSong, setIsPlaying } from '../redux/slices/playerSlice';
 import { BsPlayFill, BsClock } from 'react-icons/bs';
-import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
+import { AiOutlineHeart } from 'react-icons/ai';
 import Loader from '../components/common/Loader';
 
 const Album = () => {
@@ -155,5 +155,6 @@ const Album = () => {
     </div>
   );
 };
+
 
 export default Album;
